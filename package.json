@@ -1,0 +1,17 @@
+{
+  "name": "apm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/angular": "^1.6.54",
+    "@types/angular-route": "^1.7.0",
+    "@types/http-server": "^0.10.0",
+    "angular-route": "^1.4.1"
+  }
+}

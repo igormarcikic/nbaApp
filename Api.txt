@@ -1,0 +1,14 @@
+Main:
+https://github.com/swar/nba_api/tree/master/docs/nba_api/stats/endpoints
+
+League standings:
+https://github.com/swar/nba_api/blob/master/docs/nba_api/stats/endpoints/leaguestandings.md
+https://stats.nba.com/stats/leaguestandings?LeagueID=00&Season=2018-19&SeasonType=Regular+Season&SeasonYear=
+
+Team roster:
+https://github.com/swar/nba_api/blob/master/docs/nba_api/stats/endpoints/commonteamroster.md
+https://stats.nba.com/stats/commonteamroster?LeagueID=&Season=2018-19&TeamID=1610612739
+
+Team details: 
+https://github.com/swar/nba_api/blob/master/docs/nba_api/stats/endpoints/teamdetails.md
+https://stats.nba.com/stats/teamdetails?TeamID=1610612739

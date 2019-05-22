@@ -1,0 +1,50 @@
+<div ng-controller="TeamList as tl" class="container">
+    <div class="row">
+        <div class="col-sm">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th colspan="3" style="text-align:center;"><img src="./../../images/western.jpg" width="60px;">
+                            WESTERN CONFERENCE : {{tl.teamsList.parameters.SeasonYear}}</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Position</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Conference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat='teams in tl.teamsList.resultSets[0].rowSet'>
+                        <td ng-if='teams[5] === tl.westConf' ng-init='id = tl.countWest()'> {{id}}</td>
+                        <td ng-if='teams[5] === tl.westConf'><a href="{{teams[4]}}">{{teams[3]}} {{teams[4]}}</a></td>
+                        <td ng-if='teams[5] === tl.westConf'>{{teams[5]}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-sm">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th colspan="3" style="text-align:center;"><img src="./../../images/eastern.jpg" width="60px;">
+                            EASTERN CONFERENCE : {{tl.teamsList.parameters.SeasonYear}}</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Position</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Conference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat='teams in tl.teamsList.resultSets[0].rowSet'>
+                        <td ng-if='teams[5] === tl.eastConf' ng-init='id = tl.countEast()'> {{id}}</td>
+                        <td ng-if='teams[5] === tl.eastConf'><a href="{{teams[4]}}">{{teams[3]}} {{teams[4]}}</a></td>
+                        <td ng-if='teams[5] === tl.eastConf'>{{teams[5]}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

@@ -1,2 +1,0 @@
-# nbaApp
-NBA application
